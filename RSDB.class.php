@@ -12,10 +12,10 @@ CLASS RSDB {
    static $dateOfCreation="March 01, 2009";
    protected $ERRORS;
    protected $log;
-   const root = Document::RSDB_dir;
-   public $root = Document::RSDB_dir;
-   const replica_root = Document::RSDB_dir;
-   public $replica_root = Document::RSDB_replica_dir;
+   const root = RSDB_root;
+   public $root = RSDB_root;
+   const replica_root = RSDB_replica_root;
+   public $replica_root = RSDB_replica_root;
    /*DO NOT CHANGE THE ENDER IF DB BEGAN ALREADY!!!!!!!!!!!!!!!
    you can only change this when you are just starting the DB
    */

@@ -1,5 +1,11 @@
 <?php
 if (!defined('RSDB')) {
+
+   DEFINED('RSDB_root')
+      || DEFINE('RSDB_root',dirname('.'));
+   DEFINED('RSDB_replica_root')
+      || DEFINE('RSDB_replica_root',dirname(RSDB_root.'/../RSDB_replica'));
+
    require 'RSDB.class.php';
    require 'RSDBconnection.class.php';
    require 'RSDB_result.class.php';
