@@ -7,7 +7,11 @@ if (!defined('RSDB')) {
    RSDB_var('select', array());
    RSDB_var('insert', array());
 }
-/*$link=RSDB_connect("open-source","macro");
+/*
+
+# Debug / Example:
+
+$link=RSDB_connect("open-source","macro");
 RSDB_drop("macro",$link);
 RSDB_mk_table("macro",$link,$cols);
 pingOS($link);
