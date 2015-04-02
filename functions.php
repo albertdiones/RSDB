@@ -45,7 +45,7 @@ function RSDB_var($name,$value="") {
 //A function to conveniently read/write globals_with_long_names
    $real_name=$name;
    $name="GLOBAL_RSDB_VAR_$name";
-   if (is_array($GLOBALS[$name])) {
+   if (isset($GLOBALS[$name]) && is_array($GLOBALS[$name])) {
       $key=count($GLOBALS[$name]);
       if ($value) {
          $GLOBALS[$name][$key]=$value;
@@ -57,7 +57,7 @@ function RSDB_var($name,$value="") {
    }
    if ($value)
       $GLOBALS[$name]=$value;
-   return $GLOBALS[$name];
+   return isset($GLOBALS[$name]) ? $GLOBALS[$name] : null;
 }
 /*
    ****************************************
