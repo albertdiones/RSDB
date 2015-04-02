@@ -3,6 +3,7 @@ if (!defined('RSDB')) {
    require 'RSDB.class.php';
    require 'RSDBconnection.class.php';
    require 'RSDB_result.class.php';
+   require 'functions.php';
    RSDB_var('connect', array());
    RSDB_var('select', array());
    RSDB_var('insert', array());
